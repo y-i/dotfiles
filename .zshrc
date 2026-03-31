@@ -91,6 +91,8 @@ git-root() {
     git rev-parse --show-superproject-working-tree --show-toplevel | head -1
 }
 
+export PATH=$HOME/.local/bin:$PATH
+
 # llvm
 export PATH="/usr/loca/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
